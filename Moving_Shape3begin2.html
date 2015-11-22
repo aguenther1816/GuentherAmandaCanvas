@@ -1,0 +1,238 @@
+ <!doctype html>
+ <html>
+ <head>
+    <style>
+        body {
+            margin: 100px;
+            padding: 0px;
+        }
+        </style>
+    </head>
+ <title>This is so Fun</title>
+  <body>
+ <canvas id='Canvas' width="700" height="700" style="border:1px solid #005BAB; background-color: #ADD8E6;"></canvas>
+ <script>
+ 
+var canvas = document.getElementById('Canvas');
+    var context = canvas.getContext('2d'), shape2 = canvas.getContext('2d');
+
+    var drawing = function (dx, dy) {
+        // rand drawing drawing
+        context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+        context.translate(dx, dy); /// translate (move)
+
+            context.fillStyle="rgb(0,0,0)";
+context.lineStyle="rgb(0,0,0)";
+context.lineWidth=1;
+context.beginPath();
+context.moveTo(50,85);
+context.bezierCurveTo(49,82,47,83,47,91);
+context.bezierCurveTo(48,99,51,99,47,107);
+context.bezierCurveTo(43,115,39,111,39,107);
+context.bezierCurveTo(39,103,41,94,44,90);
+context.bezierCurveTo(48,85,44,80,42,80);
+context.bezierCurveTo(41,80,40,79,39,83);
+context.bezierCurveTo(38,87,38,92,31,91);
+context.bezierCurveTo(24,89,28,75,35,76);
+context.bezierCurveTo(41,78,38,71,34,70);
+context.bezierCurveTo(34,70,21,72,28,68);
+context.bezierCurveTo(28,68,32,68,32,62);
+context.bezierCurveTo(31,55,16,77,8,69);
+context.bezierCurveTo(0,62,12,58,16,58);
+context.bezierCurveTo(19,58,26,60,30,58);
+context.bezierCurveTo(34,57,36,52,24,50);
+context.bezierCurveTo(12,47,8,47,12,42);
+context.bezierCurveTo(17,36,25,50,30,49);
+context.bezierCurveTo(34,48,35,47,35,44);
+context.bezierCurveTo(35,42,35,41,31,40);
+context.bezierCurveTo(28,40,22,39,27,36);
+context.bezierCurveTo(32,33,36,41,36,41);
+context.bezierCurveTo(36,41,43,40,37,35);
+context.bezierCurveTo(32,30,5,36,11,21);
+context.bezierCurveTo(17,6,36,31,36,31);
+context.bezierCurveTo(36,31,42,38,42,33);
+context.bezierCurveTo(42,28,43,27,49,33);
+context.bezierCurveTo(55,38,54,26,49,25);
+context.bezierCurveTo(44,23,30,12,35,5);
+context.bezierCurveTo(39,0,48,16,48,19);
+context.bezierCurveTo(49,23,54,28,56,31);
+context.bezierCurveTo(59,35,60,21,61,33);
+context.bezierCurveTo(61,33,66,35,64,27);
+context.bezierCurveTo(62,18,65,12,65,12);
+context.bezierCurveTo(65,12,70,5,70,29);
+context.bezierCurveTo(70,29,70,40,77,33);
+context.bezierCurveTo(77,33,74,20,81,11);
+context.bezierCurveTo(84,6,91,17,86,24);
+context.bezierCurveTo(86,24,79,38,82,36);
+context.bezierCurveTo(85,33,81,46,88,41);
+context.bezierCurveTo(88,41,93,17,104,25);
+context.bezierCurveTo(115,33,96,41,96,41);
+context.bezierCurveTo(96,41,86,48,91,47);
+context.bezierCurveTo(103,45,105,56,96,53);
+context.bezierCurveTo(92,52,89,54,89,54);
+context.bezierCurveTo(89,54,88,61,101,59);
+context.bezierCurveTo(105,59,111,52,115,62);
+context.bezierCurveTo(119,71,101,66,101,66);
+context.bezierCurveTo(101,66,93,61,94,69);
+context.bezierCurveTo(95,78,91,74,91,74);
+context.bezierCurveTo(91,74,82,74,94,84);
+context.bezierCurveTo(106,93,113,89,112,99);
+context.bezierCurveTo(112,110,96,90,96,90);
+context.bezierCurveTo(96,90,89,78,83,83);
+context.bezierCurveTo(78,89,103,113,88,103);
+context.bezierCurveTo(88,103,80,96,81,92);
+context.bezierCurveTo(82,88,78,83,76,87);
+context.bezierCurveTo(75,90,73,87,73,87);
+context.bezierCurveTo(73,87,66,85,73,94);
+context.bezierCurveTo(80,103,76,103,76,103);
+context.bezierCurveTo(76,103,70,103,70,96);
+context.bezierCurveTo(70,89,69,86,67,87);
+context.bezierCurveTo(65,88,67,94,64,96);
+context.bezierCurveTo(61,97,62,104,64,110);
+context.bezierCurveTo(66,115,56,121,57,110);
+context.bezierCurveTo(57,110,60,96,57,93);
+context.bezierCurveTo(57,93,52,96,50,85);
+context.closePath();
+context.fill();
+context.stroke();
+        
+        context.translate(-dx, -dy); /// translate (move)
+    };
+
+var shape2 = function(ax,ay){
+
+  context.translate(ax,ay);
+
+context.beginPath();
+context.moveTo(-19,35);
+
+
+context.fillStyle = 'blue';
+// start point
+context.fillRect(50, 204, 10, 10);
+// end point
+context.fillRect(50, 100, 10, 10);
+
+context.fillStyle = 'red';
+// control point one
+context.fillRect(230, 30, 10, 10);
+// control point two
+context.fillRect(150, 60, 10, 10);
+      
+
+        context.translate(-ax, -ay);
+};
+
+
+
+var words = function(ax,ay){
+
+  context.translate(ax, ay);
+
+context.moveTo(70,-56);
+context.beginPath();
+context.strokeStyle = 'purple';
+context.font = "48px serif";
+context.strokeText("Look at this Cool Stuff", 70, -56);
+context.stroke();
+context.closePath();
+  
+context.translate(-ax,-ay);
+
+
+};
+
+
+var gradient = function(ax,ay) {
+
+context.translate(ax, ay);
+context.moveTo(-19, 77);
+
+
+for (var i=0;i<6;i++){
+  for (var j=0;j<6;j++){
+    context.strokeStyle = 'rgb(0,' + Math.floor(255-42.5*i) + ',' + 
+                      Math.floor(255-42.5*j) + ')';
+    context.beginPath();
+    context.arc(12.5+j*25,12.5+i*25,10,0,Math.PI*2,true);
+    context.stroke();
+  }
+}
+
+
+context.translate(-ax, -ay);
+
+};
+
+var shape = function(ax,ay) {
+  //context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+    
+        context.translate(ax, ay); /// translate (move)
+
+            context.beginPath();
+      context.moveTo(170, 80);
+      context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+      context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+      context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+      context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+      context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+      context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+
+      // complete custom shape
+      context.closePath();
+      context.lineWidth = 5;
+      context.strokeStyle = 'blue';
+      context.stroke();
+        
+        context.translate(-ax, -ay); /// translate (move)
+    };
+
+    //var drawText = function()
+
+
+
+         /// example / demo
+        var dx = 0, dy = 0;
+        var ax = 0, ay = 5;
+        var radian = 0;
+        var radianDirection = true;
+        var rgb = {
+          r: 0,
+          g: 0,
+          b: 0
+        };
+        
+        function executeFrame() {
+            dx++;
+            dy++;
+
+            if(radianDirection) {
+              radian += 0.01;
+            } else {
+              radian -= 0.01;
+            }
+            if(radian > 1) { radianDirection = false; }
+            if(radian < 0) { radianDirection = true; }
+            ax = 500 * Math.sin(radian);
+            ay = ay + (Math.random()*2);//ay++;
+            if (dx > context.canvas.width) dx = 0;
+            if (dy > context.canvas.height) dy = 0;
+            if (ax > context.canvas.width) ax = 0;
+            if (ay > context.canvas.height) ay = 5;
+
+            drawing(dx, dy);
+            shape(ax,ay);
+
+            shape2(ax,ay);
+            words(ax,ay);
+            gradient(ax,ay);
+
+            requestAnimationFrame(executeFrame);
+        }
+
+        //start animation
+
+        executeFrame();
+ </script>
+    </body>
+    </html>
